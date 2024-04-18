@@ -1,0 +1,47 @@
+/* 게시글 전체보기 CSS */
+#boardListForm{
+    width: 1100px; margin: 0 auto;
+}
+
+#listView{margin: 0 auto; width: 100%;}
+
+/* 카테고리 영역 */
+#boardListTop{display: flex; justify-content: space-between;}
+#categoryChooseBox{padding-top: 25px;}
+#pageBoardSizeChooseBox{padding-top: 25px;}
+
+/* 버튼 내글보기 글쓰기 CSS */
+#boardListButton{display: flex; justify-content: end;}
+#boardListButton button{
+    margin: 15px 5px; padding: 0 5px;
+    width: 95px; height: 25px;
+    font-size: 20px;
+}
+
+.pagination{
+    display: flex;justify-content: center;
+    margin: 40px auto;
+}
+
+.pagination li{padding: 0 15px;}
+.boardactive{ background-color: #FF7C2B; color: white; border-radius: 5px;}
+.boardactive >a{color: white;}
+.pagination li:hover{box-shadow: 0px 0px 0px 2px #FF7C2B inset; border-radius: 5px;}
+
+#boardSearchBox{
+    display: flex; justify-content: center;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex; width: 60%;
+    margin-bottom: 100px;
+}
+.d-flex #searchQ{height: 45px; margin: 0 5px;}
+.d-flex .keyword{height: 45px; margin: 0 5px;}
+.d-flex .btn-outline-success{height: 45px; margin: 0 5px;}
+
+.nameHover>a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #FF7C2B;
+  }

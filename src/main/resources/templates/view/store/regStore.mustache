@@ -1,0 +1,87 @@
+{{>layouts/header}}
+<div class="storeWrap">
+    <h1>가게 등록 </h1>
+        <form id="storeRegForm">
+        <ul class="storeUl">
+            <li>
+                <p>가게이름</p>
+                <input onkeyup="snameCheck()" type="text" id="sname" name="sname"><br/>
+                <div class="namebox snameCheckBox"> </div>
+            </li>
+            <li>
+                <p>전화번호</p>
+                <input onkeyup="sphonecheck()" type="text" id="sphone" name="sphone"><br/>
+                <div class="phnoebox sphonecheckbox"></div>
+            </li>
+            <li>
+                <p> 가게 주소 </p>
+                <input name="sadress" type="text" id="sample5_address" placeholder="주소">
+                <input  type="button" onclick="sample5_execDaumPostcode()" value="주소 검색"><br>
+                <div id="map" style="width:300px;height:300px;margin-top:10px;display:none"></div>
+                <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=26d062567ebd55ff37aa7c8a6e58c325&libraries=services"></script>
+
+            </li>
+
+            <li>
+                <p> 가게 설명 </p>
+                <input onkeyup="scontentCheck()" type="text" id="scontent" name="scontent"><br/>
+                <div class="contentbox scontentcheckbox"> </div>
+            </li>
+            <li>
+                <p> 사업자 번호 </p>
+                <input onkeyup="snumberCheck()" type="text" id="snumber" name="snumber"><br/>
+                <div class="snumberbox snumberCheckBox"> </div>
+            </li>
+            <li>
+                <p> 지역 선택</p>
+                <select id="categorya" name="categorya">
+                    <option value="1">안산</option>
+                    <option value="2">시흥</option>
+                    <option value="3">수원</option>
+                    <option value="4">부천</option>
+                    <option value="5">안양</option>
+                    <option value="6">서울</option>
+                </select>
+            </li>
+            <li>
+        <p> 음식 분류</p>
+                <select id="categoryb" name="categoryb">
+                    <option value="1">한식</option>
+                    <option value="2">일식</option>
+                    <option value="3">중식</option>
+                    <option value="4">양식</option>
+                    <option value="5">분식</option>
+                    <option value="6">패스트푸드</option>
+                </select>
+            </li>
+            <li>
+                <p>대표이미지</p>
+                <input onchange="onChangeStoreImg1(this)" type="file" class="regimg" id="simg1"name="simg1" accept="/image/*"><br/>
+                <div class="simg1 "><img id="storePreimg1" class ="storePreimg" src='/img/default.jpg'></div>
+            </li>
+            <li>
+                <p> 이미지2 </p>
+                <input onchange="onChangeStoreImg2(this)" type="file" class="regimg" id="simg2"name="simg2" accept="/image/*"><br/>
+                <div class="simg2 "><img id="storePreimg2" class ="storePreimg" src='/img/default.jpg'></div>
+            </li>
+            <li>
+            <p> 이미지3 </p>
+                <input onchange="onChangeStoreImg3(this)" type="file" class="regimg" id="simg3"name="simg3" accept="/image/*"><br/>
+                <div class="simg3 "><img id="storePreimg3" class ="storePreimg" src='/img/default.jpg'></div>
+            </li>
+            <li>
+            <p> 이미지4 </p>
+                <input onchange="onChangeStoreImg4(this)" type="file" class="regimg" id="simg4"name="simg4" accept="/image/*"><br/>
+                <div class="simg4 "><img id="storePreimg4" class ="storePreimg" src='/img/default.jpg'></div>
+            </li>
+            <!--<div class="simgbox simgCheckBox"> </div>-->
+
+        </ul>
+            <button class="regStorebtn" type="button" onclick="onReg()"> 가게등록</button><br/>
+        </form>
+    </div>
+<link rel='stylesheet' type='text/css' href="/css/regStore.css">
+<script src="/js/regStore.js"></script>
+
+{{>layouts/footer}}

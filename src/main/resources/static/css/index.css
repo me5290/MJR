@@ -1,0 +1,180 @@
+/*콘텐츠 시작*/
+/* #banner{
+    width: 100%;
+    height: 640px;
+    background-color: #F2F2F2
+} */
+#content_box{
+    width: 1100px;
+    background-color:#fff;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+.box{
+    width: 100%;
+    padding:120px 10px;
+}
+
+/*메인 지도*/
+.mainMapBox{
+    width:80%;
+    height:250px;
+    margin:0 auto;
+    position:relative;
+}
+.mainMapBox>a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.mainMapBox>a:hover{
+    border: 3px solid #FF7C2B;
+    box-shadow: 2px 2px 10px #999;
+}
+.mainMapBox>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/*추천 맛집*/
+.boxTitle{
+    font-size:32px;
+    margin-bottom:30px;
+}
+.suggestion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.suggestion>li{
+    width:230px;
+    position:relative;
+    border:1px solid gray;
+}
+.suggestion>li>img{
+    width:100%;
+    height:200px;
+}
+.mainContent{
+    padding:10px;
+}
+.mainContent>p{
+    margin:10px 0;
+}
+.mainContent>p>span{
+    font-size:14px;
+    color:gray;
+}
+.suggestion>li>a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.suggestion>li>a:hover{
+    border: 1px solid #FF7C2B;
+    box-shadow: 2px 2px 10px #999;
+}
+
+/* 전승호 추가부분 ===================================*/
+.outer {
+  position: relative;
+  width: 1100px;
+  height: 640px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+  .inner-list {
+    position: relative;
+    display: flex;
+    transition: .3s ease-out;
+    height: 100%;
+  }
+
+  .inner {
+    padding: 0 0px;
+  }
+  /* 지울예정 */
+.bannerText{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+  .inner img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  /* .button-list {
+    position: absolute;
+    top : 90px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  /* .button-list >button{ */
+.button-left , .button-right{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 200px;
+    height: 600px;
+    background-color: #0d0d0d00;
+    color: white;
+    border: none;
+  }
+.button-left{
+  position: absolute;
+  top : 0px;
+}
+.button-right{
+  position: absolute;
+  top : 0px; right: 0px;
+}
+.button-left:hover{
+  background-color: #0d0d0d00;
+  color: white;
+}
+.button-right:hover{
+  background-color: #0d0d0d00;
+  color: white;
+}
+
+/* 주변가게 출력 */
+#nearRestaurant{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#nearRestaurant>li{
+    width:230px;
+    position:relative;
+    border:1px solid gray;
+}
+#nearRestaurant>li>img{
+    width:100%;
+    height:200px;
+}
+#nearRestaurant>li>a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#nearRestaurant>li>a:hover{
+    border: 1px solid #FF7C2B;
+    box-shadow: 2px 2px 10px #999;
+}
+
+/* 전승호 추가부분 END ===================================*/

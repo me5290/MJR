@@ -1,0 +1,106 @@
+{{>layouts/header}}
+<link rel="stylesheet" type="text/css" href="/css/index.css">
+    <div id="content">
+        <div class="outer">
+            <div class="inner-list">
+                <div class="inner">
+                    <img src="/img/한식.png" alt="이미지 1">
+                </div>
+                <div class="inner">
+                    <img src="/img/일식.png" alt="이미지 2">
+                </div>
+                <div class="inner">
+                    <img src="/img/중식.png" alt="이미지 3">
+                </div>
+                <div class="inner">
+                    <img src="/img/양식.png" alt="이미지 4">
+                </div>
+                <div class="inner">
+                    <img src="/img/분식.png" alt="이미지 5">
+                </div>
+                <div class="inner">
+                    <img src="/img/패스트푸드.png" alt="이미지 6">
+                </div>
+            </div>
+            {{! <div class="button-list"> }}
+                <button class="button-left"><</button>
+                <button class="button-right">></button>
+            {{! </div> }}
+        </div>
+        
+        <div id="content_box">
+            <div class="box">
+                <h2 class="boxTitle"> 주변 맛집 지도로 알아보기! </h2>
+                <div class="mainMapBox">
+                    <img src="/img/mainMapImg.png" alt="mainMapImg"/>
+                    <a href="/map"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h2 class="boxTitle">추천 맛집</h2>
+                <ul class="suggestion">
+
+                </ul>
+            </div>
+            <div class="box">
+                <h2 class="boxTitle">주변 맛집</h2>
+                <ul id = "nearRestaurant">
+
+                </ul>
+            </div>
+            <div class="box">
+                <a href="/board/list">
+                    <h2 class="boxTitle">
+                        전체 게시판
+                    </h2>
+                </a>
+                <table>
+                    <thead>
+                    <tr class="table-info">
+                        <th style="width:20%">등록일자</th>
+                        <th style="width:50%;">제목</th>
+                        <th style="width:10%">조회수</th>
+                        <th style="width:20%">작성자</th>
+                    </tr>
+                    </thead>
+                    <tbody id="boardTableBody1">
+                    <tr>
+                        <td><!--2024-03-05 11:00:30--></td>
+                        <td style="text-align: left;"><!--제목1--></td>
+                        <td><!--조회수--></td>
+                        <td>
+                            <img src="" style="width:20px; border-radius:50%;"/>
+                            <!--작성자이름-->
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box">
+                <h2 class="boxTitle">인기 글</h2>
+                <table>
+                    <thead>
+                    <tr class="table-info">
+                        <th style="width:20%">등록일자</th>
+                        <th style="width:50%;">제목</th>
+                        <th style="width:10%">조회수</th>
+                        <th style="width:20%">작성자</th>
+                    </tr>
+                    </thead>
+                    <tbody id="boardTableBody2">
+                    <tr>
+                        <td><!--2024-03-05 11:00:30--></td>
+                        <td style="text-align: left;"><!--제목1--></td>
+                        <td><!--조회수--></td>
+                        <td>
+                            <img src="" style="width:20px; border-radius:50%;"/>
+                            <!--작성자이름-->
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="/js/index.js"></script>
+{{>layouts/footer}}

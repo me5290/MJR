@@ -1,0 +1,57 @@
+{{>layouts/header}}
+    <div class="storeViewBox">
+        <div class="storeTopEtc">
+            <h1 class="storeTitle">음식점 목록</h1>
+            <div hidden="hidden">
+                <select class="pageStoreSize" onchange="onPageStoreSize(this)" >
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                </select>
+            </div>
+        </div>
+        <div id="smallHeader">
+            <div id=" categoryBox">
+            <select onchange="onCategoryA(this)" name="categorya" class="storeBtnBox" id="storeBtnBox1">
+                <option value="0">전체</option>
+                <option value="1">안산</option>
+                <option value="2">시흥</option>
+                <option value="3">수원</option>
+                <option value="4">부천</option>
+                <option value="5">안양</option>
+                <option value="6">서울</option>
+            </select>
+            <select onchange="onCategoryB(this)" name="categoryb" class="storeBtnBox" id="storeBtnBox2">
+                <option value="0">전체</option>
+                <option value="1">한식</option>
+                <option value="2">일식</option>
+                <option value="3">중식</option>
+                <option value="4">양식</option>
+                <option value="5">분식</option>
+                <option value="6">패스트푸드</option>
+            </select>
+            </div>
+            <a href="/store/reg"><button class="storeBtn"  id="regStore" onclick="">가게등록 </button></a>
+        </div>
+        <!--가게 리스트 -->
+        <div class="storeList">
+
+        </div>
+        <!--페이지네이션-->
+        <nav aria-label="Page navigation example">
+            <div class="pagination">
+
+            </div>
+        </nav>
+        <div class="StoreSearchBox"><!--검색 창-->
+            <select class="key">            <!--검색 key: SQL 검색시 사용할 필드명-->
+                <option value="sname">가게이름</option>
+                <option value="scontent">가게설명</option>
+            </select>
+            <input class="keyword"/>    <!--검색 키워드: SQL 검색시 사용할 필드명-->
+            <button class="storeBtn" type="button" onclick="doStoreSearch()">검색</button>
+        </div>
+    </div>
+<link rel="stylesheet" type="text/css" href="/css/store.css">
+<script src="/js/store.js"></script>
+{{>layouts/footer}}

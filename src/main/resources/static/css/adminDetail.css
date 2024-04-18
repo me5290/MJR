@@ -1,0 +1,26 @@
+.box1{
+    height : 1000px;
+    overflow: auto;
+}
+
+#adminDetailMenu{
+    display : flex;
+    align-items: end;
+}
+
+.nav_btn_badge{
+    border : 1px solid #0D0D0D
+}
+
+.pagination{
+    display: flex;justify-content: center;
+    margin: 40px auto;
+}
+
+.pagination li{margin: 0 15px;}
+.boardactive{ background-color: #FF7C2B;color: white;}
+
+a:hover{
+    color:#FF7C2B;
+    text-decoration: underline;
+}

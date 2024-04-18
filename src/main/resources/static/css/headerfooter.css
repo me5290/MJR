@@ -1,0 +1,232 @@
+/* 공통 css */
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    box-sizing:border-box;
+    font-family: 'omyu_pretty';
+}
+a{
+    text-decoration:none;
+    color:#0d0d0d;
+}
+ul,ol{
+    list-style:none;
+}
+table{
+    width: 100%;
+    border: 1px #a39485 solid;
+    font-size: .9em;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+}
+thead{
+    font-weight: bold;
+    color: #fff;
+    background: #FF7C2B;
+}
+th{
+    padding: 6px 4px;
+}
+td{
+    border-bottom: 1px solid #EBC394;
+    background: #fff;
+    padding: 6px 4px;
+}
+td>a{
+    padding:10px;
+}
+td>a:hover{
+    text-decoration:underline;
+    font-weight: bold;
+    color: #FF7C2B;
+}
+input[type=text],input[type=password]{
+    width: 550px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    padding: 4px 10px;
+}
+button{
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    color: #FF7C2B;
+    font-size: 26px;
+}
+button:hover{
+    background-color: #FF7C2B;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* 헤더 시작 */
+#header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top:0;
+    z-index:996;
+}
+#gnv{
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.headerLogos{
+    display: flex;
+}
+
+.logo{ /* 로고의 박스 사이즈 */
+    width: 100px;
+    height: 80px;
+    margin-top: 5px;
+}
+
+.logo>a>img{ /* 로고 이미지 조절 */
+    object-fit:contain;
+    width: 95px;
+    cursor: pointer;
+}
+#hamburger{ /* 햄버거 박스 사이즈 */
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 16px;
+    margin-right: 0px;
+}
+
+#hamburger>img{ /* 햄버거 이미지 조절 */
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
+/* 헤더 햄버거 메뉴 */
+.hamburgerMenu{ /* 햄버거 메뉴 리스트 일단 none*/
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    left: -400px;
+    z-index: 999;
+    top: 0;
+    background-color: #F2F2F2;
+    transition: 0.3s ease; /* transform 속성에 대한 애니메이션 효과 추가 */
+    border-top-right-radius : 15px;
+    border-bottom-right-radius : 15px;
+}
+.hamburgerMenu.active { /* 누르면 보이게 */
+    left: 0px; /* active 클래스가 추가될 때 오른쪽으로 이동하여 보이도록 설정 */
+}
+
+/* 햄버거 메뉴의 윗부분 로고 및 글 귀  */
+.hbgMTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 백그라운드 미리 깔아 놓기 */
+.darkBackground{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* 백그라운드 .active 걸기 */
+.darkBackground.active{
+    z-index: 998;
+    display: block;
+}
+
+#member_service{
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.loginNsignup{
+    display:flex;
+    align-items:center;
+}
+.loginNsignup>p{
+    margin-right:20px;
+}
+.loginNsignup>p>a:hover{
+    color:#FF7C2B;
+    text-decoration:underline;
+}
+.memberBox{
+    display:flex;
+    align-items:center;
+    margin-bottom:12px;
+}
+.memberBox>p{
+    margin-left:20px;
+}
+.memberMenu{
+    display:flex;
+    align-items:center;
+}
+.memberMenu>p{
+    margin-right:20px;
+}
+.memberMenu>p>a:hover{
+    color:#FF7C2B;
+    text-decoration:underline;
+}
+
+#main_menu>li{
+    padding: 30px 20px;
+    width: 100%;
+}
+
+#main_menu>li>a{
+    font-size:28px;
+}
+
+#main_menu>li>a:hover{
+    color:#FF7C2B;
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+.hbgUnderline{
+    border : 1px solid gray;
+    margin: 0 auto;
+    width : 93%;
+    margin-bottom : 10px;
+}
+
+
+/* 헤더 끝 */
+
+/* 푸터 시작 */
+
+#footer{
+    width: 100%;
+    height: 340px;
+    background-color: #333;
+}

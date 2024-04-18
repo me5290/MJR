@@ -1,0 +1,21 @@
+{{>layouts/header}}
+    <div id="mypageBox">
+        <div id="mypageTitle">
+            <img src="/img/mzrLogo.png"/>
+            <h1>마이페이지</h1>
+        </div>
+        <ul id="mypageMenu">
+            <li class="nav_btn_badge active" onclick="onMyinfo()">내 정보</li>
+            <li class="nav_btn_badge" onclick="updateView()">회원정보 변경</li>
+            <li class="nav_btn_badge" onclick="myWriteList()">내가 쓴 글/댓글 보기</li>
+            <li class="nav_btn_badge" onclick="myStoreList()">내 가게 보기</li>
+            <li class="nav_btn_badge" onclick="myCoupon()">내 쿠폰</li>
+            <li class="nav_btn_badge" onclick="favorites()">즐겨찾기</li>
+            <li class="nav_btn_badge" onclick="memberDelete()">회원탈퇴</li>
+        </ul>
+        <div id="mypageContentBox">
+
+        </div>
+    </div>
+<script src="/js/mypage.js"></script>
+{{>layouts/footer}}

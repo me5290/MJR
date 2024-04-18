@@ -1,0 +1,134 @@
+<!-- 어드민 처음나오면 쓸 머스테치 -->
+{{>layouts/header}}
+    <!-- 관리자 페이지 CSS  -->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/admin.css'>
+    <div id="content">
+        <div id="content_box" >
+                <div id="adminTitle" style="padding:10px;">
+                    <img src="/img/mzrLogo.png"/>
+                    <h1>관리자 페이지</h1>
+                </div>
+            <button id="toAdDBtn" type="button" style="width:300px;" onclick="toAdDetail()">관리자 세부 페이지로</button>
+            <div class="box1">
+
+                <div style="font-weight: bold;"><a href="/adminDetailPage?detail=member">회원 관리 +</a></div>
+                <table id="adminMtable">
+                    <thead>
+                        <tr>
+                            <th>회원 번호</th>
+                            <th style="width: 25%">아이디</th>
+                            <th style="width: 15%">이름</th>
+                            <th style="width: 20%">가입 날짜</th>
+                            <th>전화 번호</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+<!--                        <tr>-->
+<!--                            <th>2</th>-->
+<!--                            <th>샘플</th>-->
+<!--                            <th>샘플이름</th>-->
+<!--                            <th>2024-03-07</th>-->
+<!--                            <th>일반</th>-->
+<!--                        </tr>-->
+<!--                        <tr>-->
+<!--                            <th>1</th>-->
+<!--                            <th>샘플2</th>-->
+<!--                            <th>샘플이름</th>-->
+<!--                            <th>2024-03-07</th>-->
+<!--                            <th>일반</th>-->
+<!--                        </tr>-->
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box">
+                <div><a href="/adminDetailPage?detail=board">게시글 관리 +</a></div>
+                <table id="adminBtable">
+                    <thead>
+                        <tr>
+                            <th style="width: 10%">글 번호</th>
+                            <th style="width: 32%">제목</th>
+                            <th style="width: 20%">작성자</th>
+                            <th style="width: 20%">작성일</th>
+                            <th style="width: 10%">조회수</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box">
+                <div><a href="/adminDetailPage?detail=reply">댓글 관리 +</a></div>
+                <table id="adminRPtable">
+                    <thead>
+                        <tr>
+                            <th>댓글 내용</th>
+                            <th style="width: 20%">작성일</th>
+                            <th style="width: 20%">작성자</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="box">
+                <div><a href="/adminDetailPage?detail=review">리뷰 관리 +</a></div>
+                <table id="adminRVtable">
+                    <thead>
+                        <tr>
+                            <th style="width: 40%">리뷰 내용</th>
+                            <th>등록 사진</th>
+                            <th style="width: 20%">작성일</th>
+                            <th style="width: 20%">작성자</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box">
+                <div><a href="/adminDetailPage?detail=store&sstate=03">음식점 승인/반려 +</a></div>
+                <table id="adminStable">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%">식당 이름</th>
+                            <th style="width: 10%">대표 사진</th>
+                            <th style="width: 32%">식당 설명</th>
+                            <th style="width: 20%">작성자</th>
+                            <th style="width: 10%">상태</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="box">
+                <div><a href="/adminDetailPage?detail=store&sstate=12">음식점 관리 +</a></div>
+                <table id="adminS2table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%">식당 이름</th>
+                            <th style="width: 10%">대표 사진</th>
+                            <th style="width: 32%">식당 설명</th>
+                            <th style="width: 20%">작성자</th>
+                            <th style="width: 10%">상태</th>
+                            <th style="width: 8%">비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+<script src="/js/admin.js"></script>
+{{>layouts/footer}}

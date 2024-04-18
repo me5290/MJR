@@ -1,0 +1,51 @@
+body{
+    overflow:hidden;
+}
+#mapSideBox{
+    width:390px;
+    height:100%;
+    background-color:#fff;
+    position:fixed;
+    left:0;
+    top:80px;
+    overflow-y:scroll;
+    z-index:100;
+    padding-bottom: 62px;
+}
+#mapSideBox::-webkit-scrollbar {
+    width: 10px;
+}
+#mapSideBox::-webkit-scrollbar-thumb {
+    background: #FF7C2B; /* 스크롤바 색상 */
+    border-radius: 10px; /* 스크롤바 둥근 테두리 */
+}
+#mapSideBox::-webkit-scrollbar-track {
+    background: rgba(252, 100, 12, 0.1);  /*스크롤바 뒷 배경 색상*/
+}
+.mapSideAlgorithm{
+    border-bottom:2px solid #333;
+}
+.storeSideInfo{
+    width:100%;
+    height:150px;
+    display:flex;
+    align-items:center;
+    padding: 10px;
+    border-bottom: 1px solid #EBC394;
+    position:relative;
+}
+.storeSideInfo>a{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.storeSideInfo>img{
+    width: 100px;
+    height: 100px;
+    margin-right: 24px;
+}
+.storeInfoBox>p{
+    margin-top:4px;
+}

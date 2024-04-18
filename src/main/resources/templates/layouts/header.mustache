@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛잘알 맛을 잘 아는 사람들</title>
+
+    <!-- 헤더 푸터 CSS, JS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/headerfooter.css'>
+    <script src='/js/headerfooter.js'></script>
+    <!-- 메인 페이지 CSS   -->
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/index.css'>
+    <!--로그인,회원가입,마이페이지 CSS-->
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/mypage.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <!--가게 CSS-->
+
+
+</head>
+<body>
+<div id="main">
+    <div class="darkBackground" onclick="toggleMenu()"></div>
+    <div class="hamburgerMenu">
+        <div class="hbgMTop">
+            <div class="logo" style="margin-left: 10px;">
+               <a href="/main"><img src="/img/mzrLogo.png"/></a>
+            </div>
+            <div style="text-align: center; font-size: 28px; font-weight: bold; color: #FF7C2B;">
+                맛 잘 알<br/>
+                <span style="color: #F2F2F2; font-size: 18px; color : #EBC394">맛을 잘 아는 사람들</span>
+            </div>
+            <div>
+                <img src="/img/Xmark.png" onclick="toggleMenu()"  style="width: 16px; margin-right: 30px; cursor: pointer;"/>
+            </div>
+        </div>
+        <div class="hbgUnderline" style="margin-bottom : 0px;" ></div>
+        <div id="member_service">
+            <!-- JS로 출력함-->
+        </div>
+        <div class="hbgUnderline"></div>
+        <ul id="main_menu">
+            <li>
+                <a href="/map">내 주변</a>
+            </li>
+            <li>
+                <a href="/store/view">음식점</a>
+            </li>
+            <li>
+                <a href="/store/best">맛집</a>
+            </li>
+            <li>
+                <a href="/board/list">게시판</a>
+            </li>
+        </ul>
+    </div>
+    <div id="header" style="border-bottom: 2px solid #FF7C2B">
+        <div id="gnv" >
+            <div class="headerLogos">
+                <div id="hamburger" >
+                    <img src="/img/hamburgerlogo.png" onclick="toggleMenu()"/>
+                </div>
+                <div class="logo">
+                    <a href="/main"><img src="/img/mzrLogo.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>

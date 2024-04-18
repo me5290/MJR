@@ -1,0 +1,28 @@
+/* 글쓰기 CSS */
+.container{width: 1100px; margin: 0 auto;}
+/* .boardWriteForm{width: 1100px; margin: 0 auto;} */
+
+.note-toolbar button{
+    width: 60px;
+    height: 40px;
+}
+.note-fontname>div > button{
+    width: 150px;
+}
+#boardNameBox{
+    display: flex;
+    justify-content: start;
+    margin: 10px 0;
+}
+#boardNameBox > span{
+    padding: 15px 15px 10px 0;
+}
+#bname{
+    margin: 0 20px; width: 300px;
+}
+#nameCondition{padding: 15px;}
+
+
+.writeBtnBox{display: flex; margin: 20px 0px 200px; justify-content: end;}
+.writeBtnBox :nth-child(1){margin: 0 5px; width: 180px; height: 45px;}
+.writeBtnBox :nth-child(2){margin: 0 5px; width: 180px; height: 45px;}

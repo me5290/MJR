@@ -1,0 +1,24 @@
+{{>layouts/header}}
+    <div id="loginBox">
+        <div id="loginTitle">
+            <img src="/img/mzrLogo.png"/>
+            <h1>로그인</h1>
+        </div>
+        <form id="loginForm">
+            <ul>
+                <li>
+                    <input type="text" id="loginId" name="mid" placeholder="아이디 입력" onkeyup="enterKey()"/>
+                </li>
+                <li>
+                    <input type="password" id="loginPw" name="mpw" placeholder="비밀번호 입력" onkeyup="enterKey()"/>
+                </li>
+            </ul>
+            <button id="loginBtn" type="button" onclick="login()">로그인</button>
+            <a href="/member/signup">
+                <button id="signupgoBtn" type="button">
+                    회원가입
+                </button>
+            </a>
+        </form>
+    </div>
+{{>layouts/footer}}

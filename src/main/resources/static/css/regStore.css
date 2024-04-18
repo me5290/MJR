@@ -1,0 +1,43 @@
+
+/*통합 css*/
+.storeWrap{
+        width: 1100px;
+        margin: 0 auto;
+        margin-top: 100px;
+
+}
+.storeWrap>h1{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+}
+.storeUl>li{
+    margin-bottom:30px;
+}
+.storePreimg{
+    width: 300px;
+}
+/*=======================================등록 css===================================*/
+#storeRegForm{
+            width: 750px;
+            margin: 0 auto;
+            padding: 60px 100px;
+            }
+#storeRegForm>ul{
+        margin-bottom: 50px;
+}
+
+
+
+
+
+/*===========================================수정 css========================================*/
+#storeUpdateForm{
+            width: 750px;
+            margin: 0 auto;
+            padding: 60px 100px;
+            }
+
+#storeUpdateForm>ul{
+        margin-bottom: 50px;
+}

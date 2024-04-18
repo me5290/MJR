@@ -1,0 +1,30 @@
+{{>layouts/header}}
+<div id="storeInfoWrap">
+    <div id="storeInfoBox">
+
+    </div>
+
+    <div id="etcWrap">
+        <div class="btnBox">
+            <button  onclick="location.href='/store/view'">목록보기</button>
+        </div>
+        <div class="reviewBox">
+            <form class="storeReviewForm">
+                <div class="onReviewBox">
+
+                </div>
+
+                <div class="authBox"></div>
+                <div class="onReviewWriteBtn"> <!-- 리뷰작성 버튼 출력부분 -->
+                    <!-- <button type="button"class=" " onclick="onReviewWrite()">리뷰 작성</button> -->
+                </div>
+            </form>
+            <div class="reviewListBox">
+            <!-- 출력위치 -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/storeInfo.js"></script>
+<link rel='stylesheet' type='text/css' media='screen' href='/css/storeInfo.css'/>
+{{>layouts/footer}}

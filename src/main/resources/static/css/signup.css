@@ -1,0 +1,168 @@
+/* 회원가입 페이지 */
+input:focus {outline: none;}
+#signupBox{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    z-index : 995;
+}
+#signupTitle{
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+#signupTitle>img{
+    width: 200px;
+}
+#signupTitle>h1{
+    font-size: 46px;
+    text-align: center;
+    color: #FF7C2B;
+}
+#signupForm{
+    width: 750px;
+    margin: 0 auto;
+    border-top: 3px solid #0d0d0d;
+    padding: 60px 100px;
+}
+#signupForm>ul>li{
+    margin-bottom: 60px;
+    position: relative;
+}
+#signupForm>ul>li>p{
+    padding-left: 10px;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+#signupForm>ul>li>span{
+    position: absolute;
+    bottom: -24px;
+    left: 10px;
+    font-size: 15px;
+}
+#signupForm>ul>li>input[type=text],#signupForm>ul>li>input[type=password],#zipCode>[type=text]{
+    width: 550px;
+    height: 50px;
+    margin: 0 auto;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    padding: 4px 10px;
+}
+#year,#month,#day{
+    height: 50px;
+    text-align: left;
+    padding: 0 10px;
+    -webkit-appearance: none;  /* 크롬 화살표 없애기 */
+    -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+    appearance: none;  /* 화살표 없애기 */
+    background-image : url('/img/select_arrow.png');
+    background-size: 20px 12px;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+#year{
+    width: 110px;
+    margin-left: 10px;
+    background-position: 78px 50%;
+}
+#month,#day{
+    width: 92px;
+    margin-left: 30px;
+    background-position: 60px 50%;
+}
+input[type=radio]{
+    vertical-align: middle;
+    appearance: none;
+    border: max(2px, 0.1em) solid #bababa;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    transition: border 0.5s ease-in-out;
+    margin-left: 10px;
+}
+input[type=radio]:checked{
+    border: 0.5em solid #FF7C2B;
+    box-shadow: 0 0 0px 2px #bababa;
+}
+.radioBox{
+    padding-left: 10px;
+    display: inline;
+}
+.radioBox:last-child{
+    margin-left: 30px;
+}
+#emailLi{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+#memail{
+    width: 400px !important;
+    margin-left: 0 !important;
+}
+.send,#zipCode>input[type=button]{
+    width: 120px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#zipCode>input[type=button]{
+    color: #FF7C2B;
+}
+.sendBtn:hover,#zipCode>input[type=button]:hover{
+    width: 120px;
+    height: 50px;
+    background-color: #FF7C2B;
+    color:#fff;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#zipCode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#zipCode>input[type=text]{
+    width: 400px;
+    margin-left: 0;
+}
+.maddress{
+    margin: 20px 0!important;
+}
+#sample3_extraAddress{
+    display: none;
+}
+#mimg{
+    margin-left: 10px;
+}
+.priview{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+#preimg{
+    width: 400px;
+    object-fit: cover;
+}
+#signupBtn,#signupbackBtn{
+    width: 400px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    border: 1px solid #bababa;
+    border-radius: 10px;
+    color: #FF7C2B;
+    font-size: 26px;
+}
+#signupBtn:hover,#signupbackBtn:hover{
+    background-color: #FF7C2B;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+}
